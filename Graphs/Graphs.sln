@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphLibrary", "..\..\..\..\Downloads\fabricas\trabajos\projectos\GraphSolution\GraphLibrary\GraphLibrary.csproj", "{5186FF4B-443C-4F8F-A4C0-5C2B1A51038B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphLibrary", "GraphLibrary\GraphLibrary.csproj", "{5186FF4B-443C-4F8F-A4C0-5C2B1A51038B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphPresentation", "..\..\..\..\Downloads\fabricas\trabajos\projectos\GraphSolution\GraphPresentation\GraphPresentation.csproj", "{F0A96A68-281B-454E-8A05-642E3A567005}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphPresentation", "GraphPresentation\GraphPresentation.csproj", "{F0A96A68-281B-454E-8A05-642E3A567005}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
