@@ -18,15 +18,15 @@ namespace GraphPresentation
 		    XmlDocument doc = new XmlDocument();
 		    doc.Load("C:\\Users\\raul.forero\\Documents\\configs\\default.xml");
             var option = new Options();
-		    var test = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']");
+		    var test = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']").Count;
 
-            option.SearchOption = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']") != null ? SearchEnum.Dfs : (doc.SelectNodes("//feature[@name='BFS' and @manual='selected']") != null ? SearchEnum.Bfs : SearchEnum.NoSearch);
+            option.SearchOption = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']").Count != 0 ? SearchEnum.Dfs : (doc.SelectNodes("//feature[@name='BFS' and @manual='selected']").Count != 0 ? SearchEnum.Bfs : SearchEnum.NoSearch);
 
-		    option.DirectionOption = doc.SelectNodes("//feature[@name='Directed' and @manual='selected']") != null
+		    option.DirectionOption = doc.SelectNodes("//feature[@name='Directed' and @manual='selected']").Count != 0
 		        ? DirectionEnum.Directed
 		        : DirectionEnum.Undirected;
 
-		    option.WheightOption = doc.SelectNodes("//feature[@name='Weight' and @manual='selected']") != null
+		    option.WheightOption = doc.SelectNodes("//feature[@name='Weight' and @manual='selected']").Count != 0
 		        ? WeightEnum.Weighted
 		        : WeightEnum.Unweighted;
             /*
