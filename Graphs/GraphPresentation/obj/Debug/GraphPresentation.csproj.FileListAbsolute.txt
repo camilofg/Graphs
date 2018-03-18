@@ -11,3 +11,15 @@ C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution\GraphPresentation\bin\Debug\GraphLibrary.dll
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution\GraphPresentation\bin\Debug\GraphLibrary.pdb
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution\GraphPresentation\obj\Debug\GraphPresentation.GraphForm.resources
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.exe.config
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.exe
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.pdb
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.csprojResolveAssemblyReference.cache
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.GraphForm.resources
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.Main.resources
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.Properties.Resources.resources
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.csproj.GenerateResource.Cache
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.exe
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.pdb
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphLibrary.dll
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphLibrary.pdb

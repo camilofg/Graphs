@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Xml;
 using GraphLibrary;
 
 namespace GraphPresentation
@@ -13,8 +14,22 @@ namespace GraphPresentation
 
 		private void buttonCreateGraph_Click(object sender, EventArgs e)
 		{
-			var option = new Options();
 
+		    XmlDocument doc = new XmlDocument();
+		    doc.Load("C:\\Users\\raul.forero\\Documents\\configs\\default.xml");
+            var option = new Options();
+		    var test = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']");
+
+            option.SearchOption = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']") != null ? SearchEnum.Dfs : (doc.SelectNodes("//feature[@name='BFS' and @manual='selected']") != null ? SearchEnum.Bfs : SearchEnum.NoSearch);
+
+		    option.DirectionOption = doc.SelectNodes("//feature[@name='Directed' and @manual='selected']") != null
+		        ? DirectionEnum.Directed
+		        : DirectionEnum.Undirected;
+
+		    option.WheightOption = doc.SelectNodes("//feature[@name='Weight' and @manual='selected']") != null
+		        ? WeightEnum.Weighted
+		        : WeightEnum.Unweighted;
+            /*
 			option.DirectionOption = radioButtonDirected.Checked
 				? DirectionEnum.Directed
 				: radioButtonUndirected.Checked
@@ -34,8 +49,8 @@ namespace GraphPresentation
 					: radioButtonDfs.Checked
 						? SearchEnum.Dfs
 						: throw new Exception("No Search Selected");
-
-			var gForm = new GraphForm(option);
+            */
+            var gForm = new GraphForm(option);
 			gForm.Show();
 		}
 
