@@ -4,3 +4,9 @@ C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution\GraphLibrary\obj\Debug\GraphLibrary.csproj.CoreCompileInputs.cache
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution\GraphLibrary\obj\Debug\GraphLibrary.dll
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\GrafosRuntime\GraphSolution\GraphLibrary\obj\Debug\GraphLibrary.pdb
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\bin\Debug\GraphLibrary.dll
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\bin\Debug\GraphLibrary.pdb
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.csprojResolveAssemblyReference.cache
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.csproj.CoreCompileInputs.cache
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.dll
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.pdb

@@ -1,9 +1,10 @@
-﻿using GraphLibrary.GraphObjects;
+﻿using System.Collections.Generic;
+using GraphLibrary.GraphObjects;
 
 namespace GraphLibrary.Strategies.SearchStrategy
 {
 	public interface ISearchStrategy
 	{
-		Vertex Search(string vertexFrom, string vertexToSearch);
+		Vertex Search(List<Vertex> vertexes, string vertexFrom, string vertexToSearch);
 	}
 }

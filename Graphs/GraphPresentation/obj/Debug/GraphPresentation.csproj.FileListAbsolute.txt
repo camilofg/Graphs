@@ -23,3 +23,16 @@ C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug
 C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.pdb
 C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphLibrary.dll
 C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphPresentation\bin\Debug\GraphLibrary.pdb
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.exe.config
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.exe
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\bin\Debug\GraphPresentation.pdb
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\bin\Debug\GraphLibrary.dll
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\bin\Debug\GraphLibrary.pdb
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.csprojResolveAssemblyReference.cache
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.GraphForm.resources
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.Main.resources
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.Properties.Resources.resources
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.csproj.GenerateResource.Cache
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.csproj.CoreCompileInputs.cache
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.exe
+C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphPresentation\obj\Debug\GraphPresentation.pdb

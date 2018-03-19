@@ -36,9 +36,21 @@ namespace GraphLibrary.Strategies.EdgeHandler
 			return edge;
 		}
 
-		public EdgeAbstract RemoveEdge(List<Vertex> vertexes, string vertexFromName, string vertexToName)
+		public void RemoveEdge(List<Vertex> vertexes, string vertexFromName, string vertexToName)
 		{
-			throw new System.NotImplementedException();
+			if (vertexes.All(v => v.Name != vertexFromName))
+			{
+				throw new GraphException("Vertex from do not exist");
+			}
+
+			if (vertexes.All(v => v.Name != vertexToName))
+			{
+				throw new GraphException("Vertex to do not exist");
+			}
+
+			var vertexFrom = vertexes.First(v => v.Name == vertexFromName);
+
+			vertexFrom.Edges.RemoveAll(e => e.VertexFrom.Name == vertexFromName && e.VertexTo.Name == vertexToName);
 		}
 	}
 }

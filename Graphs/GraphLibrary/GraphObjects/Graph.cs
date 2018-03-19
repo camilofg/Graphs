@@ -65,9 +65,9 @@ namespace GraphLibrary.GraphObjects
 			return matrix;
 		}
 
-		public EdgeAbstract RemoveEdge(string vertexFromName, string vertexToName)
+		public void RemoveEdge(string vertexFromName, string vertexToName)
 		{
-			return _edgeHandlerStrategy.RemoveEdge(Vertexes, vertexFromName, vertexToName);
+			_edgeHandlerStrategy.RemoveEdge(Vertexes, vertexFromName, vertexToName);
 		}
 
 		public Vertex RemoveVertex(string vertexName)
@@ -81,7 +81,7 @@ namespace GraphLibrary.GraphObjects
 
 			foreach (var vertex in Vertexes)
 			{
-				vertex.RemoveEdgeTo(vertex.Name);
+				vertex.RemoveEdgeTo(vertexToRemove.Name);
 			}
 
 			Vertexes.Remove(vertexToRemove);
@@ -91,7 +91,17 @@ namespace GraphLibrary.GraphObjects
 
 		public Vertex Search(string vertexFrom, string vertexToSearch)
 		{
-			return _searchStrategy.Search(vertexFrom, vertexToSearch);
+			if (Vertexes.All(v => v.Name != vertexFrom))
+			{
+				throw new GraphException($"The vertex {vertexFrom} do not exist");
+			}
+
+			if (Vertexes.All(v => v.Name != vertexToSearch))
+			{
+				throw new GraphException($"The vertex {vertexToSearch} do not exist");
+			}
+
+			return _searchStrategy.Search(Vertexes, vertexFrom, vertexToSearch);
 		}
 	}
 }

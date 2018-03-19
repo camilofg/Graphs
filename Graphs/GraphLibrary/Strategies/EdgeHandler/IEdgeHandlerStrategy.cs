@@ -7,6 +7,6 @@ namespace GraphLibrary.Strategies.EdgeHandler
 	{
 		EdgeAbstract AddEdge(List<Vertex> vertexes, string vertexFromName, string vertexToName, int? weight);
 
-		EdgeAbstract RemoveEdge(List<Vertex> vertexes, string vertexFromName, string vertexToName);
+		void RemoveEdge(List<Vertex> vertexes, string vertexFromName, string vertexToName);
 	}
 }

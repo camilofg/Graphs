@@ -16,7 +16,6 @@ namespace GraphPresentation
 			_options = options;
 			InitializeComponent();
 
-
 			_graph = GraphBuilder.GetGraph(options);
 
 			labelWeight.Visible = options.WheightOption == WeightEnum.Weighted;
@@ -91,6 +90,57 @@ namespace GraphPresentation
 			PrintGraph(matrix);
 		}
 
+		private void buttonRemoveEdge_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrWhiteSpace(textBoxVertexFrom.Text))
+			{
+				ShowError("Vertex from can no be empty");
+				return;
+			}
+
+			if (string.IsNullOrWhiteSpace(textBoxVertexTo.Text))
+			{
+				ShowError("Vertex to can no be empty");
+				return;
+			}
+
+			CallGraphLibrary(() => _graph.RemoveEdge(textBoxVertexFrom.Text, textBoxVertexTo.Text));
+
+			var matrix = CallGraphLibrary(() => _graph.GetGraphView());
+
+			CleanForm();
+
+			PrintGraph(matrix);
+		}
+
+		private void buttonRemoveVertex_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrWhiteSpace(textBoxVertexName.Text))
+			{
+				ShowError("Vertex name can no be empty");
+				return;
+			}
+
+			CallGraphLibrary(() => _graph.RemoveVertex(textBoxVertexName.Text));
+
+			var matrix = CallGraphLibrary(() => _graph.GetGraphView());
+
+			CleanForm();
+
+			PrintGraph(matrix);
+		}
+
+		private void buttonSearch_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrWhiteSpace(textBoxSearchFrom.Text) || string.IsNullOrWhiteSpace(textBoxSearchTo.Text))
+			{
+				ShowError("To Search you must specify from to search and vertex to search.");
+				return;
+			}
+
+			CallGraphLibrary(() => _graph.Search(textBoxSearchFrom.Text, textBoxSearchTo.Text));
+		}
+
 		private T CallGraphLibrary<T>(Func<T> func) where T : class
 		{
 			try
@@ -104,12 +154,26 @@ namespace GraphPresentation
 			}
 		}
 
+		private void CallGraphLibrary(Action func)
+		{
+			try
+			{
+				func.Invoke();
+			}
+			catch (GraphException exception)
+			{
+				ShowError(exception.Message);
+			}
+		}
+
 		private void CleanForm()
 		{
 			textBoxWeight.Text = "";
 			textBoxVertexFrom.Text = "";
 			textBoxVertexName.Text = "";
 			textBoxVertexTo.Text = "";
+			textBoxSearchFrom.Text = "";
+			textBoxSearchTo.Text = "";
 
 			dataGridViewGraph.DataSource = null;
 			dataGridViewGraph.Rows.Clear();

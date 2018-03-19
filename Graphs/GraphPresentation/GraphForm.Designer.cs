@@ -39,6 +39,13 @@
 			this.dataGridViewGraph = new System.Windows.Forms.DataGridView();
 			this.labelWeight = new System.Windows.Forms.Label();
 			this.textBoxWeight = new System.Windows.Forms.TextBox();
+			this.labelVertexToSearch = new System.Windows.Forms.Label();
+			this.labelVertexStartSearch = new System.Windows.Forms.Label();
+			this.textBoxSearchTo = new System.Windows.Forms.TextBox();
+			this.buttonSearch = new System.Windows.Forms.Button();
+			this.textBoxSearchFrom = new System.Windows.Forms.TextBox();
+			this.buttonRemoveVertex = new System.Windows.Forms.Button();
+			this.buttonRemoveEdge = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraph)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -115,10 +122,10 @@
 			this.dataGridViewGraph.AllowUserToAddRows = false;
 			this.dataGridViewGraph.AllowUserToDeleteRows = false;
 			this.dataGridViewGraph.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridViewGraph.Location = new System.Drawing.Point(12, 67);
+			this.dataGridViewGraph.Location = new System.Drawing.Point(12, 88);
 			this.dataGridViewGraph.Name = "dataGridViewGraph";
 			this.dataGridViewGraph.ReadOnly = true;
-			this.dataGridViewGraph.Size = new System.Drawing.Size(760, 482);
+			this.dataGridViewGraph.Size = new System.Drawing.Size(760, 461);
 			this.dataGridViewGraph.TabIndex = 8;
 			// 
 			// labelWeight
@@ -137,11 +144,80 @@
 			this.textBoxWeight.Size = new System.Drawing.Size(41, 20);
 			this.textBoxWeight.TabIndex = 9;
 			// 
+			// labelVertexToSearch
+			// 
+			this.labelVertexToSearch.AutoSize = true;
+			this.labelVertexToSearch.Location = new System.Drawing.Point(611, 6);
+			this.labelVertexToSearch.Name = "labelVertexToSearch";
+			this.labelVertexToSearch.Size = new System.Drawing.Size(90, 13);
+			this.labelVertexToSearch.TabIndex = 15;
+			this.labelVertexToSearch.Text = "Vertex To Search";
+			// 
+			// labelVertexStartSearch
+			// 
+			this.labelVertexStartSearch.AutoSize = true;
+			this.labelVertexStartSearch.Location = new System.Drawing.Point(525, 6);
+			this.labelVertexStartSearch.Name = "labelVertexStartSearch";
+			this.labelVertexStartSearch.Size = new System.Drawing.Size(62, 13);
+			this.labelVertexStartSearch.TabIndex = 14;
+			this.labelVertexStartSearch.Text = "Vertex Start";
+			// 
+			// textBoxSearchTo
+			// 
+			this.textBoxSearchTo.Location = new System.Drawing.Point(611, 25);
+			this.textBoxSearchTo.Name = "textBoxSearchTo";
+			this.textBoxSearchTo.Size = new System.Drawing.Size(80, 20);
+			this.textBoxSearchTo.TabIndex = 13;
+			// 
+			// buttonSearch
+			// 
+			this.buttonSearch.Location = new System.Drawing.Point(697, 23);
+			this.buttonSearch.Name = "buttonSearch";
+			this.buttonSearch.Size = new System.Drawing.Size(75, 23);
+			this.buttonSearch.TabIndex = 12;
+			this.buttonSearch.Text = "Search";
+			this.buttonSearch.UseVisualStyleBackColor = true;
+			this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+			// 
+			// textBoxSearchFrom
+			// 
+			this.textBoxSearchFrom.Location = new System.Drawing.Point(525, 25);
+			this.textBoxSearchFrom.Name = "textBoxSearchFrom";
+			this.textBoxSearchFrom.Size = new System.Drawing.Size(80, 20);
+			this.textBoxSearchFrom.TabIndex = 11;
+			// 
+			// buttonRemoveVertex
+			// 
+			this.buttonRemoveVertex.Location = new System.Drawing.Point(12, 52);
+			this.buttonRemoveVertex.Name = "buttonRemoveVertex";
+			this.buttonRemoveVertex.Size = new System.Drawing.Size(161, 23);
+			this.buttonRemoveVertex.TabIndex = 16;
+			this.buttonRemoveVertex.Text = "Remove Vertex";
+			this.buttonRemoveVertex.UseVisualStyleBackColor = true;
+			this.buttonRemoveVertex.Click += new System.EventHandler(this.buttonRemoveVertex_Click);
+			// 
+			// buttonRemoveEdge
+			// 
+			this.buttonRemoveEdge.Location = new System.Drawing.Point(235, 52);
+			this.buttonRemoveEdge.Name = "buttonRemoveEdge";
+			this.buttonRemoveEdge.Size = new System.Drawing.Size(166, 23);
+			this.buttonRemoveEdge.TabIndex = 17;
+			this.buttonRemoveEdge.Text = "Remove Edge";
+			this.buttonRemoveEdge.UseVisualStyleBackColor = true;
+			this.buttonRemoveEdge.Click += new System.EventHandler(this.buttonRemoveEdge_Click);
+			// 
 			// GraphForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(784, 561);
+			this.Controls.Add(this.buttonRemoveEdge);
+			this.Controls.Add(this.buttonRemoveVertex);
+			this.Controls.Add(this.labelVertexToSearch);
+			this.Controls.Add(this.labelVertexStartSearch);
+			this.Controls.Add(this.textBoxSearchTo);
+			this.Controls.Add(this.buttonSearch);
+			this.Controls.Add(this.textBoxSearchFrom);
 			this.Controls.Add(this.labelWeight);
 			this.Controls.Add(this.textBoxWeight);
 			this.Controls.Add(this.dataGridViewGraph);
@@ -174,5 +250,12 @@
 		private System.Windows.Forms.DataGridView dataGridViewGraph;
 		private System.Windows.Forms.Label labelWeight;
 		private System.Windows.Forms.TextBox textBoxWeight;
+		private System.Windows.Forms.Label labelVertexToSearch;
+		private System.Windows.Forms.Label labelVertexStartSearch;
+		private System.Windows.Forms.TextBox textBoxSearchTo;
+		private System.Windows.Forms.Button buttonSearch;
+		private System.Windows.Forms.TextBox textBoxSearchFrom;
+		private System.Windows.Forms.Button buttonRemoveVertex;
+		private System.Windows.Forms.Button buttonRemoveEdge;
 	}
 }

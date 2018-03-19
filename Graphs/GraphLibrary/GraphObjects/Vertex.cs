@@ -27,7 +27,7 @@ namespace GraphLibrary.GraphObjects
 
 		public void RemoveEdgeTo(string vertexName)
 		{
-			throw new System.NotImplementedException();
+			Edges.RemoveAll(e => e.VertexTo.Name == vertexName);
 		}
 	}
 }
