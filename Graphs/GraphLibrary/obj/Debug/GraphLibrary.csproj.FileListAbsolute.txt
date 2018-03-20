@@ -10,3 +10,8 @@ C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphL
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.csproj.CoreCompileInputs.cache
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.dll
 C:\Jairo\DB\Dropbox\MISO\Fabricas\Trabajos\Projectos\Grafos\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.pdb
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphLibrary\bin\Debug\GraphLibrary.dll
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphLibrary\bin\Debug\GraphLibrary.pdb
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.csprojResolveAssemblyReference.cache
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.dll
+C:\Users\raul.forero\Documents\ReposCF\Graphs\Graphs\GraphLibrary\obj\Debug\GraphLibrary.pdb
