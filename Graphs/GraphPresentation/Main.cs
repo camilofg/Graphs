@@ -19,8 +19,14 @@ namespace GraphPresentation
 
 		    if (ChkXml.Checked)
 		    {
+		        if (string.IsNullOrEmpty(_routeFile))
+		        {
+		            MessageBox.Show("The xml config file route has not been selected");
+		            return;
+		        }
+
 		        XmlDocument doc = new XmlDocument();
-		        doc.Load("C:\\Users\\raul.forero\\Documents\\configs\\default.xml");
+		        doc.Load(_routeFile);
 		        var test = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']").Count;
 
 		        option.SearchOption = doc.SelectNodes("//feature[@name='DFS' and @manual='selected']").Count != 0
